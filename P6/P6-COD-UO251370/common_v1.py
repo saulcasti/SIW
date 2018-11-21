@@ -106,6 +106,8 @@ class Indexer(object):
 
         docs={}
 
+
+
         for word in bag_of_words.values:
             score = self.score(word,enable_stemming=False, filter_stopwords=False)
             for s in score:
@@ -131,6 +133,7 @@ class Indexer(object):
         len_doc = bag_of_words.document_len();
         result = []
         for key in docs.keys():
+            calculate = 0.0
             cos_similarity = {
                 "dot_product": 0,
                 "query_mod": 0,
@@ -153,7 +156,12 @@ class Indexer(object):
                 cos_similarity["query_mod"] += math.pow(idf_mul_tf, 2)
 
 
-            calculate = float(cos_similarity["dot_product"]) / float(math.sqrt(cos_similarity["query_mod"])*math.sqrt(cos_similarity["doc_mod"]))
+
+            mod_query = float(math.sqrt(cos_similarity["query_mod"]))
+            doc_mod = math.sqrt(cos_similarity["doc_mod"])
+            calculate = float(cos_similarity["dot_product"]) / (mod_query*doc_mod)
+            if '1365' in self.docs_index[key]["text"]:
+                pass
             result.append([self.docs_index[key]["text"], calculate])
 
 
@@ -310,7 +318,9 @@ def read_cran(text, query, limit):
         q = q.strip()
         bag = BagOfWords(q, enable_stemming=False, filter_stopwords=False)
         results = indexer.search(bag, 10)
-        print("Result: {}".format(results))
+        print("Results:")
+        for idx, val in enumerate(results):
+            print('\t{} -> Cos_Sim.: {} || Result: {}'.format(idx +1 , round(val[1],4), val[0]))
         print('\n')
 
 
