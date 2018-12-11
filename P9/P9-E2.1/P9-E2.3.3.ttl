@@ -1,0 +1,203 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix j.0: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/> .
+@prefix j.1: <http://www.ontologydesignpatterns.org/ont/cnlp/dependencies.owl#> .
+@prefix j.2: <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix j.4: <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix j.5: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix j.6: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix j.7: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix j.8: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+j.4:denotes a owl:ObjectProperty .
+
+j.4:hasInterpretant a owl:ObjectProperty .
+
+j.2:begins a owl:ObjectProperty .
+
+j.2:ends a owl:ObjectProperty .
+
+j.2:hasContent a owl:ObjectProperty .
+
+j.2:refersTo a owl:ObjectProperty .
+
+j.7:possibleType a owl:ObjectProperty .
+
+j.1:other_coref a owl:ObjectProperty .
+
+dul:associatedWith a owl:ObjectProperty .
+
+dul:hasQuality a owl:ObjectProperty .
+
+j.5:offset_0_18_The_New_York_Times a j.2:PointerRange ;
+    rdfs:label "The_New_York_Times"^^xsd:string ;
+    j.4:denotes j.5:the_new_york_times_1 ;
+    j.4:hasInterpretant j.5:The_new_york_times ;
+    j.2:begins "0"^^xsd:nonNegativeInteger ;
+    j.2:ends "18"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:NNS .
+
+j.5:offset_19_27_reported a j.2:PointerRange ;
+    rdfs:label "reported"^^xsd:string ;
+    j.4:denotes j.5:report_1 ;
+    j.4:hasInterpretant j.5:Report ;
+    j.2:begins "19"^^xsd:nonNegativeInteger ;
+    j.2:ends "27"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:VBD .
+
+j.5:offset_33_46_John_McCarthy a j.2:PointerRange ;
+    rdfs:label "John_McCarthy"^^xsd:string ;
+    j.4:denotes j.5:John_mccarthy ;
+    j.2:begins "33"^^xsd:nonNegativeInteger ;
+    j.2:ends "46"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:NNP .
+
+j.5:offset_47_51_died a j.2:PointerRange ;
+    rdfs:label "died"^^xsd:string ;
+    j.4:denotes j.5:die_1 ;
+    j.4:hasInterpretant j.5:Die ;
+    j.2:begins "47"^^xsd:nonNegativeInteger ;
+    j.2:ends "51"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:VBD .
+
+j.5:offset_53_55_He a j.2:PointerRange ;
+    rdfs:label "He"^^xsd:string ;
+    j.4:hasInterpretant j.5:Male ;
+    j.2:begins "53"^^xsd:nonNegativeInteger ;
+    j.2:ends "55"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:PRP .
+
+j.5:offset_56_64_invented a j.2:PointerRange ;
+    rdfs:label "invented"^^xsd:string ;
+    j.4:denotes j.5:invent_1 ;
+    j.4:hasInterpretant j.5:Invent ;
+    j.2:begins "56"^^xsd:nonNegativeInteger ;
+    j.2:ends "64"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:VBD .
+
+j.5:offset_69_80_programming a j.2:PointerRange ;
+    rdfs:label "programming"^^xsd:string ;
+    j.4:denotes j.5:Lisp,
+        j.5:programming_1 ;
+    j.4:hasInterpretant j.5:Programming ;
+    j.2:begins "69"^^xsd:nonNegativeInteger ;
+    j.2:ends "80"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:NN .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_69_89_programming+language> a j.2:PointerRange ;
+    rdfs:label "Programming Language"^^xsd:string,
+        "programming language"^^xsd:string ;
+    j.4:denotes j.5:ProgrammingLanguage ;
+    j.2:begins "69"^^xsd:nonNegativeInteger ;
+    j.2:ends "89"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse .
+
+j.5:offset_81_89_language a j.2:PointerRange ;
+    rdfs:label "language"^^xsd:string ;
+    j.4:denotes j.5:Lisp,
+        j.5:language_1 ;
+    j.4:hasInterpretant j.5:Language ;
+    j.2:begins "81"^^xsd:nonNegativeInteger ;
+    j.2:ends "89"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:NN .
+
+j.5:offset_90_94_LISP a j.2:PointerRange ;
+    rdfs:label "LISP"^^xsd:string ;
+    j.4:denotes j.5:Lisp ;
+    j.4:hasInterpretant j.5:Language,
+        j.5:Programming ;
+    j.2:begins "90"^^xsd:nonNegativeInteger ;
+    j.2:ends "94"^^xsd:nonNegativeInteger ;
+    j.2:refersTo j.5:docuverse ;
+    j.6:pennpos j.6:NNP .
+
+j.6:boxerpos a owl:ObjectProperty .
+
+j.6:pennpos a owl:ObjectProperty .
+
+j.8:hasDeterminer a owl:ObjectProperty .
+
+j.8:hasQuantifier a owl:ObjectProperty .
+
+j.0:Agent a owl:ObjectProperty .
+
+j.0:Product a owl:ObjectProperty .
+
+j.0:Theme a owl:ObjectProperty .
+
+rdfs:subClassOf a owl:ObjectProperty .
+
+owl:equivalentClass a owl:ObjectProperty .
+
+<http://dbpedia.org/resource/The_New_York_Times> rdfs:subClassOf <http://schema.org/CreativeWork> .
+
+j.5:programming_1 a j.5:Programming ;
+    dul:associatedWith j.5:Lisp ;
+    j.8:hasDeterminer j.8:the .
+
+j.5:report_1 a j.5:Report ;
+    j.0:Agent j.5:the_new_york_times_1 ;
+    j.0:Theme j.5:die_1 .
+
+j.5:Die j.6:boxerpos j.6:v ;
+    rdfs:subClassOf dul:Event ;
+    owl:equivalentClass <http://www.ontologydesignpatterns.org/ont/vn/data/Die_48020000> .
+
+j.5:Invent j.6:boxerpos j.6:v ;
+    rdfs:subClassOf dul:Event ;
+    owl:equivalentClass <http://www.ontologydesignpatterns.org/ont/vn/data/Invent_26030100> .
+
+j.5:Male j.6:boxerpos j.6:a .
+
+j.5:ProgrammingLanguage a owl:Class ;
+    dul:associatedWith j.5:Programming ;
+    rdfs:subClassOf j.5:Language ;
+    owl:equivalentClass <http://dbpedia.org/resource/Programming_language> .
+
+j.5:Report j.6:boxerpos j.6:v ;
+    rdfs:subClassOf dul:Event ;
+    owl:equivalentClass <http://www.ontologydesignpatterns.org/ont/vn/data/Report_29090100> .
+
+j.5:The_new_york_times a owl:Class ;
+    j.6:boxerpos j.6:n ;
+    owl:equivalentClass <http://dbpedia.org/resource/The_New_York_Times> .
+
+j.5:die_1 a j.5:Die ;
+    j.0:Theme j.5:John_mccarthy .
+
+j.5:invent_1 a j.5:Invent ;
+    j.0:Agent j.5:John_mccarthy ;
+    j.0:Product j.5:Lisp .
+
+j.5:the_new_york_times_1 a j.5:The_new_york_times ;
+    j.8:hasQuantifier j.8:multiple .
+
+j.5:John_mccarthy j.7:possibleType <http://xmlns.com/foaf/0.1/Person> ;
+    j.1:other_coref j.5:invent_1 ;
+    dul:hasQuality j.5:Male ;
+    = <http://dbpedia.org/resource/John_McCarthy_(computer_scientist)> .
+
+j.5:Language a owl:Class ;
+    j.6:boxerpos j.6:n .
+
+j.5:Programming a owl:Class ;
+    j.6:boxerpos j.6:n .
+
+j.5:Lisp a j.5:ProgrammingLanguage ;
+    j.7:possibleType owl:Thing ;
+    = <http://dbpedia.org/resource/Lisp_(programming_language)> .
+
+j.5:docuverse a j.2:StringDocuverse ;
+    j.2:hasContent "The_New_York_Times reported that John_McCarthy died. He invented the programming language LISP." .

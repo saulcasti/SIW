@@ -1,0 +1,129 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix j.0: <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix j.2: <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix j.3: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix j.4: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix j.5: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix j.7: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+j.2:denotes a owl:ObjectProperty .
+
+j.2:hasInterpretant a owl:ObjectProperty .
+
+j.0:begins a owl:ObjectProperty .
+
+j.0:ends a owl:ObjectProperty .
+
+j.0:hasContent a owl:ObjectProperty .
+
+j.0:refersTo a owl:ObjectProperty .
+
+j.5:possibleType a owl:ObjectProperty .
+
+dul:associatedWith a owl:ObjectProperty .
+
+j.3:offset_0_11_Miles_Davis a j.0:PointerRange ;
+    rdfs:label "Miles_Davis"^^xsd:string ;
+    j.2:denotes j.3:Miles_davis ;
+    j.2:hasInterpretant j.3:Jazz,
+        j.3:Musician ;
+    j.0:begins "0"^^xsd:nonNegativeInteger ;
+    j.0:ends "11"^^xsd:nonNegativeInteger ;
+    j.0:refersTo j.3:docuverse ;
+    j.4:pennpos j.4:NNP .
+
+j.3:offset_19_27_american a j.0:PointerRange ;
+    rdfs:label "american"^^xsd:string ;
+    j.2:hasInterpretant j.3:American ;
+    j.0:begins "19"^^xsd:nonNegativeInteger ;
+    j.0:ends "27"^^xsd:nonNegativeInteger ;
+    j.0:refersTo j.3:docuverse ;
+    j.4:pennpos j.4:JJ .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_19_41_american+jazz+musician> a j.0:PointerRange ;
+    rdfs:label "American Jazz Musician"^^xsd:string,
+        "american jazz musician"^^xsd:string ;
+    j.2:denotes j.3:AmericanJazzMusician ;
+    j.0:begins "19"^^xsd:nonNegativeInteger ;
+    j.0:ends "41"^^xsd:nonNegativeInteger ;
+    j.0:refersTo j.3:docuverse .
+
+j.3:offset_28_32_jazz a j.0:PointerRange ;
+    rdfs:label "jazz"^^xsd:string ;
+    j.2:denotes j.3:Miles_davis,
+        j.3:jazz_1 ;
+    j.2:hasInterpretant j.3:Jazz ;
+    j.0:begins "28"^^xsd:nonNegativeInteger ;
+    j.0:ends "32"^^xsd:nonNegativeInteger ;
+    j.0:refersTo j.3:docuverse ;
+    j.4:pennpos j.4:NN .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_28_41_jazz+musician> a j.0:PointerRange ;
+    rdfs:label "Jazz Musician"^^xsd:string,
+        "jazz musician"^^xsd:string ;
+    j.2:denotes j.3:JazzMusician ;
+    j.0:begins "28"^^xsd:nonNegativeInteger ;
+    j.0:ends "41"^^xsd:nonNegativeInteger ;
+    j.0:refersTo j.3:docuverse .
+
+j.3:offset_33_41_musician a j.0:PointerRange ;
+    rdfs:label "musician"^^xsd:string ;
+    j.2:denotes j.3:Miles_davis,
+        j.3:musician_1 ;
+    j.2:hasInterpretant j.3:Musician ;
+    j.0:begins "33"^^xsd:nonNegativeInteger ;
+    j.0:ends "41"^^xsd:nonNegativeInteger ;
+    j.0:refersTo j.3:docuverse ;
+    j.4:pennpos j.4:NN .
+
+j.4:boxerpos a owl:ObjectProperty .
+
+j.4:pennpos a owl:ObjectProperty .
+
+j.7:hasDeterminer a owl:ObjectProperty .
+
+rdfs:subClassOf a owl:ObjectProperty .
+
+<http://dbpedia.org/resource/Miles_Davis> a schema:MusicGroup,
+        schema:Person .
+
+j.3:AmericanJazz a owl:Class ;
+    dul:hasQuality j.3:American ;
+    rdfs:subClassOf j.3:Jazz .
+
+j.3:jazz_1 a j.3:Jazz ;
+    dul:associatedWith j.3:Miles_davis ;
+    j.7:hasDeterminer j.7:an .
+
+j.3:American a owl:Class ;
+    j.4:boxerpos j.4:a ;
+    rdfs:subClassOf dul:Quality .
+
+j.3:AmericanJazzMusician a owl:Class ;
+    dul:associatedWith j.3:AmericanJazz ;
+    rdfs:subClassOf j.3:JazzMusician .
+
+j.3:JazzMusician a owl:Class ;
+    dul:associatedWith j.3:Jazz ;
+    rdfs:subClassOf j.3:Musician .
+
+j.3:Musician a owl:Class ;
+    j.4:boxerpos j.4:n ;
+    owl:equivalentClass <http://dbpedia.org/resource/Musician> .
+
+j.3:Miles_davis a j.3:AmericanJazzMusician ;
+    j.5:possibleType <http://dbpedia.org/ontology/Place> ;
+    = <http://dbpedia.org/resource/Miles_Davis> .
+
+j.3:Jazz a owl:Class ;
+    j.4:boxerpos j.4:n ;
+    owl:equivalentClass <http://dbpedia.org/resource/Jazz> .
+
+j.3:docuverse a j.0:StringDocuverse ;
+    j.0:hasContent "Miles_Davis was an american jazz musician." .

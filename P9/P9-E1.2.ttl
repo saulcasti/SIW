@@ -1,0 +1,33 @@
+@base <http://www.wikidata.org/wiki/> .
+@prefix schema: <http://schema.org/> .
+
+<Q76>
+    a schema:Person ;
+    schema:hasOccupation <Q30461> ;
+    schema:familyname "Obama";
+    schema:name "Barack" .
+
+<Q30461>
+    a schema:Occupation ;
+    schema:name "President" .
+
+<Q458>
+    a schema:Organization ;
+    schema:name "European Union" .
+
+<Q61>
+    a schema:City;
+    schema:name "Washington".
+
+<Q4916>
+    a schema:Thing;
+    schema:name "euro".
+
+<Q4917>
+    a schema:Thing;
+    schema:name "dollar".
+
+
+
+
+    

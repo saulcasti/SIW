@@ -1,0 +1,513 @@
+{
+  "@context": {
+    "dbpedia": "http://dbpedia.org/resource/",
+    "dul": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "j.0": "http://www.ontologydesignpatterns.org/ont/vn/abox/role/",
+    "j.1": "http://www.ontologydesignpatterns.org/ont/cnlp/dependencies.owl#",
+    "j.2": "http://www.essepuntato.it/2008/12/earmark#",
+    "j.4": "http://ontologydesignpatterns.org/cp/owl/semiotics.owl#",
+    "j.5": "http://www.ontologydesignpatterns.org/ont/fred/domain.owl#",
+    "j.6": "http://www.ontologydesignpatterns.org/ont/fred/pos.owl#",
+    "j.7": "http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#",
+    "j.8": "http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "j.0:Agent",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.4:hasInterpretant",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:offset_69_80_programming",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "69"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "80"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": [
+        {
+          "@id": "j.5:programming_1"
+        },
+        {
+          "@id": "j.5:Lisp"
+        }
+      ],
+      "j.4:hasInterpretant": {
+        "@id": "j.5:Programming"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:NN"
+      },
+      "rdfs:label": "programming"
+    },
+    {
+      "@id": "j.8:hasQuantifier",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:the_new_york_times_1",
+      "@type": "j.5:The_new_york_times",
+      "j.8:hasQuantifier": {
+        "@id": "j.8:multiple"
+      }
+    },
+    {
+      "@id": "j.5:Male",
+      "j.6:boxerpos": {
+        "@id": "j.6:a"
+      }
+    },
+    {
+      "@id": "rdfs:subClassOf",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.2:begins",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.2:ends",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:offset_0_18_The_New_York_Times",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "0"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "18"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": {
+        "@id": "j.5:the_new_york_times_1"
+      },
+      "j.4:hasInterpretant": {
+        "@id": "j.5:The_new_york_times"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:NNS"
+      },
+      "rdfs:label": "The_New_York_Times"
+    },
+    {
+      "@id": "j.5:Language",
+      "@type": "owl:Class",
+      "j.6:boxerpos": {
+        "@id": "j.6:n"
+      }
+    },
+    {
+      "@id": "j.5:docuverse",
+      "@type": "j.2:StringDocuverse",
+      "j.2:hasContent": "The_New_York_Times reported that John_McCarthy died. He invented the programming language LISP."
+    },
+    {
+      "@id": "j.5:offset_47_51_died",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "47"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "51"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": {
+        "@id": "j.5:die_1"
+      },
+      "j.4:hasInterpretant": {
+        "@id": "j.5:Die"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:VBD"
+      },
+      "rdfs:label": "died"
+    },
+    {
+      "@id": "j.8:hasDeterminer",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:offset_53_55_He",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "53"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "55"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:hasInterpretant": {
+        "@id": "j.5:Male"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:PRP"
+      },
+      "rdfs:label": "He"
+    },
+    {
+      "@id": "j.5:die_1",
+      "@type": "j.5:Die",
+      "j.0:Theme": {
+        "@id": "j.5:John_mccarthy"
+      }
+    },
+    {
+      "@id": "j.5:Lisp",
+      "@type": "j.5:ProgrammingLanguage",
+      "j.7:possibleType": {
+        "@id": "owl:Thing"
+      },
+      "owl:sameAs": {
+        "@id": "dbpedia:Lisp_(programming_language)"
+      }
+    },
+    {
+      "@id": "j.0:Theme",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.0:Product",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.1:other_coref",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:offset_33_46_John_McCarthy",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "33"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "46"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": {
+        "@id": "j.5:John_mccarthy"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:NNP"
+      },
+      "rdfs:label": "John_McCarthy"
+    },
+    {
+      "@id": "j.5:Report",
+      "j.6:boxerpos": {
+        "@id": "j.6:v"
+      },
+      "owl:equivalentClass": {
+        "@id": "http://www.ontologydesignpatterns.org/ont/vn/data/Report_29090100"
+      },
+      "rdfs:subClassOf": {
+        "@id": "dul:Event"
+      }
+    },
+    {
+      "@id": "j.5:offset_81_89_language",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "81"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "89"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": [
+        {
+          "@id": "j.5:Lisp"
+        },
+        {
+          "@id": "j.5:language_1"
+        }
+      ],
+      "j.4:hasInterpretant": {
+        "@id": "j.5:Language"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:NN"
+      },
+      "rdfs:label": "language"
+    },
+    {
+      "@id": "j.4:denotes",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:Die",
+      "j.6:boxerpos": {
+        "@id": "j.6:v"
+      },
+      "owl:equivalentClass": {
+        "@id": "http://www.ontologydesignpatterns.org/ont/vn/data/Die_48020000"
+      },
+      "rdfs:subClassOf": {
+        "@id": "dul:Event"
+      }
+    },
+    {
+      "@id": "j.5:The_new_york_times",
+      "@type": "owl:Class",
+      "j.6:boxerpos": {
+        "@id": "j.6:n"
+      },
+      "owl:equivalentClass": {
+        "@id": "dbpedia:The_New_York_Times"
+      }
+    },
+    {
+      "@id": "j.5:Programming",
+      "@type": "owl:Class",
+      "j.6:boxerpos": {
+        "@id": "j.6:n"
+      }
+    },
+    {
+      "@id": "j.2:refersTo",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:offset_19_27_reported",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "19"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "27"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": {
+        "@id": "j.5:report_1"
+      },
+      "j.4:hasInterpretant": {
+        "@id": "j.5:Report"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:VBD"
+      },
+      "rdfs:label": "reported"
+    },
+    {
+      "@id": "j.5:invent_1",
+      "@type": "j.5:Invent",
+      "j.0:Agent": {
+        "@id": "j.5:John_mccarthy"
+      },
+      "j.0:Product": {
+        "@id": "j.5:Lisp"
+      }
+    },
+    {
+      "@id": "j.5:Invent",
+      "j.6:boxerpos": {
+        "@id": "j.6:v"
+      },
+      "owl:equivalentClass": {
+        "@id": "http://www.ontologydesignpatterns.org/ont/vn/data/Invent_26030100"
+      },
+      "rdfs:subClassOf": {
+        "@id": "dul:Event"
+      }
+    },
+    {
+      "@id": "j.5:offset_56_64_invented",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "56"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "64"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": {
+        "@id": "j.5:invent_1"
+      },
+      "j.4:hasInterpretant": {
+        "@id": "j.5:Invent"
+      },
+      "j.6:pennpos": {
+        "@id": "j.6:VBD"
+      },
+      "rdfs:label": "invented"
+    },
+    {
+      "@id": "j.5:ProgrammingLanguage",
+      "@type": "owl:Class",
+      "dul:associatedWith": {
+        "@id": "j.5:Programming"
+      },
+      "owl:equivalentClass": {
+        "@id": "dbpedia:Programming_language"
+      },
+      "rdfs:subClassOf": {
+        "@id": "j.5:Language"
+      }
+    },
+    {
+      "@id": "dul:hasQuality",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:programming_1",
+      "@type": "j.5:Programming",
+      "dul:associatedWith": {
+        "@id": "j.5:Lisp"
+      },
+      "j.8:hasDeterminer": {
+        "@id": "j.8:the"
+      }
+    },
+    {
+      "@id": "dbpedia:The_New_York_Times",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "j.5:John_mccarthy",
+      "dul:hasQuality": {
+        "@id": "j.5:Male"
+      },
+      "j.1:other_coref": {
+        "@id": "j.5:invent_1"
+      },
+      "j.7:possibleType": {
+        "@id": "foaf:Person"
+      },
+      "owl:sameAs": {
+        "@id": "dbpedia:John_McCarthy_(computer_scientist)"
+      }
+    },
+    {
+      "@id": "j.7:possibleType",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:report_1",
+      "@type": "j.5:Report",
+      "j.0:Agent": {
+        "@id": "j.5:the_new_york_times_1"
+      },
+      "j.0:Theme": {
+        "@id": "j.5:die_1"
+      }
+    },
+    {
+      "@id": "j.6:pennpos",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "owl:equivalentClass",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.5:offset_69_89_programming+language",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "69"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "89"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": {
+        "@id": "j.5:ProgrammingLanguage"
+      },
+      "rdfs:label": [
+        "programming language",
+        "Programming Language"
+      ]
+    },
+    {
+      "@id": "j.5:offset_90_94_LISP",
+      "@type": "j.2:PointerRange",
+      "j.2:begins": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "90"
+      },
+      "j.2:ends": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "94"
+      },
+      "j.2:refersTo": {
+        "@id": "j.5:docuverse"
+      },
+      "j.4:denotes": {
+        "@id": "j.5:Lisp"
+      },
+      "j.4:hasInterpretant": [
+        {
+          "@id": "j.5:Programming"
+        },
+        {
+          "@id": "j.5:Language"
+        }
+      ],
+      "j.6:pennpos": {
+        "@id": "j.6:NNP"
+      },
+      "rdfs:label": "LISP"
+    },
+    {
+      "@id": "dul:associatedWith",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.2:hasContent",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "j.6:boxerpos",
+      "@type": "owl:ObjectProperty"
+    }
+  ]
+}

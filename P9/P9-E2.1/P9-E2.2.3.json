@@ -1,0 +1,745 @@
+{
+    "@context": {
+        "dbpedia": "http://dbpedia.org/resource/",
+        "dul": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "j.0": "http://www.ontologydesignpatterns.org/ont/vn/abox/role/",
+        "j.1": "http://www.essepuntato.it/2008/12/earmark#",
+        "j.3": "http://www.ontologydesignpatterns.org/ont/fred/domain.owl#",
+        "j.4": "http://ontologydesignpatterns.org/cp/owl/semiotics.owl#",
+        "j.5": "http://www.ontologydesignpatterns.org/ont/fred/pos.owl#",
+        "j.6": "http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#",
+        "j.8": "http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [{
+            "@id": "j.3:offset_50_57_huddled",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "50"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "57"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:huddle_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Huddle"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:VBD"
+            },
+            "rdfs:label": "huddled"
+        },
+        {
+            "@id": "j.0:Agent",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:close_1",
+            "@type": "j.3:Close",
+            "j.0:Patient": {
+                "@id": "j.3:euro_1"
+            }
+        },
+        {
+            "@id": "j.4:hasInterpretant",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_0_9_President",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "0"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "9"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NNP"
+            },
+            "rdfs:label": "President"
+        },
+        {
+            "@id": "j.3:offset_61_71_Washington",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "61"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "71"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:Washington"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NNP"
+            },
+            "rdfs:label": "Washington"
+        },
+        {
+            "@id": "http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President",
+            "j.6:possibleType": {
+                "@id": "dul:Role"
+            },
+            "owl:sameAs": {
+                "@id": "dbpedia:President_of_the_United_States"
+            }
+        },
+        {
+            "@id": "j.3:Greater",
+            "j.5:boxerpos": {
+                "@id": "j.5:a"
+            }
+        },
+        {
+            "@id": "j.3:offset_107_109_of",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "107"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "109"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Of"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:IN"
+            },
+            "rdfs:label": "of"
+        },
+        {
+            "@id": "dul:hasRole",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.8:hasQuantifier",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_42_49_leaders",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "42"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "49"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:leader_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Leader"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NNS"
+            },
+            "rdfs:label": "leaders"
+        },
+        {
+            "@id": "j.3:grow_1",
+            "@type": "j.3:Grow",
+            "j.0:Agent": {
+                "@id": "j.3:fear_1"
+            }
+        },
+        {
+            "@id": "j.1:ends",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_114_118_euro",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "114"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "118"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:euro_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Euro"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NN"
+            },
+            "rdfs:label": "euro"
+        },
+        {
+            "@id": "j.3:offset_91_95_over",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "91"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "95"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Over"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:IN"
+            },
+            "rdfs:label": "over"
+        },
+        {
+            "@id": "j.3:future_1",
+            "@type": "j.3:Future",
+            "j.3:futureOf": {
+                "@id": "j.3:euro_1"
+            },
+            "j.8:hasDeterminer": {
+                "@id": "j.8:the"
+            }
+        },
+        {
+            "@id": "j.3:huddle_1",
+            "@type": "j.3:Huddle",
+            "j.0:Location": {
+                "@id": "j.3:fear_1"
+            },
+            "j.0:Theme": [{
+                    "@id": "j.3:leader_1"
+                },
+                {
+                    "@id": "j.3:Barack_obama"
+                }
+            ],
+            "j.3:locatedIn": {
+                "@id": "j.3:Washington"
+            }
+        },
+        {
+            "@id": "j.3:offset_133_140_greater",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "133"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "140"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Greater"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:JJR"
+            },
+            "rdfs:label": "greater"
+        },
+        {
+            "@id": "j.4:denotes",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "dul:hasDataValue",
+            "@type": "owl:DataTypeProperty"
+        },
+        {
+            "@id": "j.3:Euro",
+            "j.5:boxerpos": {
+                "@id": "j.5:n"
+            }
+        },
+        {
+            "@id": "j.3:Leader",
+            "j.5:boxerpos": {
+                "@id": "j.5:n"
+            }
+        },
+        {
+            "@id": "j.3:Future",
+            "j.5:boxerpos": {
+                "@id": "j.5:n"
+            }
+        },
+        {
+            "@id": "j.3:docuverse",
+            "@type": "j.1:StringDocuverse",
+            "j.1:hasContent": "President Barack_Obama and European_Union leaders huddled in Washington amid growing fears over the future of the euro, which closed greater than 1.3 dollars."
+        },
+        {
+            "@id": "j.3:locatedIn",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_58_60_in",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "58"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "60"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:In"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:IN"
+            },
+            "rdfs:label": "in"
+        },
+        {
+            "@id": "j.0:Location",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.8:hasDeterminer",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "rdfs:subClassOf",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:over",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_85_90_fears",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "85"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "90"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:fear_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Fear"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NNS"
+            },
+            "rdfs:label": "fears"
+        },
+        {
+            "@id": "j.3:offset_150_157_dollars",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "150"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "157"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:dollar_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Dollar"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NNS"
+            },
+            "rdfs:label": "dollars"
+        },
+        {
+            "@id": "j.0:Theme",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:European_union",
+            "j.6:possibleType": {
+                "@id": "foaf:Organisation"
+            },
+            "owl:sameAs": {
+                "@id": "dbpedia:European_Union"
+            }
+        },
+        {
+            "@id": "j.3:fear_1",
+            "@type": "j.3:Fear",
+            "j.3:over": {
+                "@id": "j.3:future_1"
+            },
+            "j.8:hasQuantifier": {
+                "@id": "j.8:multiple"
+            }
+        },
+        {
+            "@id": "j.3:Grow",
+            "j.5:boxerpos": {
+                "@id": "j.5:v"
+            },
+            "owl:equivalentClass": {
+                "@id": "http://www.ontologydesignpatterns.org/ont/vn/data/Grow_26010000"
+            },
+            "rdfs:subClassOf": {
+                "@id": "dul:Event"
+            }
+        },
+        {
+            "@id": "j.3:Dollar",
+            "j.5:boxerpos": {
+                "@id": "j.5:n"
+            }
+        },
+        {
+            "@id": "j.1:hasContent",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:futureOf",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.6:possibleType",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "dbpedia:Washington,_D.C.",
+            "@type": "schema:Place"
+        },
+        {
+            "@id": "j.1:begins",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:Fear",
+            "j.5:boxerpos": {
+                "@id": "j.5:n"
+            }
+        },
+        {
+            "@id": "j.3:Washington",
+            "j.6:possibleType": {
+                "@id": "http://dbpedia.org/ontology/Place"
+            },
+            "owl:sameAs": {
+                "@id": "dbpedia:Washington,_D.C."
+            }
+        },
+        {
+            "@id": "dbpedia:Barack_Obama",
+            "@type": "schema:Person"
+        },
+        {
+            "@id": "j.1:refersTo",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:euro_1",
+            "@type": "j.3:Euro",
+            "j.3:greaterThan": {
+                "@id": "j.3:dollar_1"
+            },
+            "j.8:hasDeterminer": {
+                "@id": "j.8:the"
+            }
+        },
+        {
+            "@id": "j.3:Close",
+            "j.5:boxerpos": {
+                "@id": "j.5:v"
+            },
+            "owl:equivalentClass": {
+                "@id": "http://www.ontologydesignpatterns.org/ont/vn/data/Close_45040000"
+            },
+            "rdfs:subClassOf": {
+                "@id": "dul:Event"
+            }
+        },
+        {
+            "@id": "j.3:Huddle",
+            "j.5:boxerpos": {
+                "@id": "j.5:v"
+            },
+            "owl:equivalentClass": {
+                "@id": "http://www.ontologydesignpatterns.org/ont/vn/data/Huddle_47060000"
+            },
+            "rdfs:subClassOf": {
+                "@id": "dul:Event"
+            }
+        },
+        {
+            "@id": "j.3:offset_141_145_than",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "141"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "145"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Than"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:IN"
+            },
+            "rdfs:label": "than"
+        },
+        {
+            "@id": "j.3:offset_72_76_amid",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "72"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "76"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.0:Location"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:IN"
+            },
+            "rdfs:label": "amid"
+        },
+        {
+            "@id": "j.0:Patient",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.5:pennpos",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.5:boxerpos",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:leader_1",
+            "@type": "j.3:Leader",
+            "dul:associatedWith": {
+                "@id": "j.3:European_union"
+            },
+            "j.8:hasQuantifier": {
+                "@id": "j.8:multiple"
+            }
+        },
+        {
+            "@id": "j.3:offset_126_132_closed",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "126"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "132"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:close_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Close"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:VBD"
+            },
+            "rdfs:label": "closed"
+        },
+        {
+            "@id": "owl:equivalentClass",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_10_22_Barack_Obama",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "10"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "22"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:Barack_obama"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NNP"
+            },
+            "rdfs:label": "Barack_Obama"
+        },
+        {
+            "@id": "j.3:offset_100_106_future",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "100"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "106"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:future_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Future"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NN"
+            },
+            "rdfs:label": "future"
+        },
+        {
+            "@id": "j.3:offset_77_84_growing",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "77"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "84"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:grow_1"
+            },
+            "j.4:hasInterpretant": {
+                "@id": "j.3:Grow"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:VBG"
+            },
+            "rdfs:label": "growing"
+        },
+        {
+            "@id": "dul:associatedWith",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_27_41_European_Union",
+            "@type": "j.1:PointerRange",
+            "j.1:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "27"
+            },
+            "j.1:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "41"
+            },
+            "j.1:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.4:denotes": {
+                "@id": "j.3:European_union"
+            },
+            "j.5:pennpos": {
+                "@id": "j.5:NNP"
+            },
+            "rdfs:label": "European_Union"
+        },
+        {
+            "@id": "j.3:Barack_obama",
+            "dul:associatedWith": {
+                "@id": "http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President"
+            },
+            "dul:hasRole": {
+                "@id": "http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President"
+            },
+            "j.6:possibleType": {
+                "@id": "http://dbpedia.org/ontology/Place"
+            },
+            "owl:sameAs": {
+                "@id": "dbpedia:Barack_Obama"
+            }
+        },
+        {
+            "@id": "j.3:greaterThan",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:dollar_1",
+            "@type": "j.3:Dollar",
+            "dul:hasDataValue": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "1.3"
+            },
+            "j.8:hasQuantifier": {
+                "@id": "j.8:multiple"
+            }
+        }
+    ]
+}

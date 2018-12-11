@@ -1,0 +1,18 @@
+@base <http://www.wikidata.org/wiki/> .
+@prefix schema: <http://schema.org/> .
+
+<Q93341>
+    a schema:Person ;
+    schema:nationality <Q30>;
+    schema:hasOccupation <Q15981151> ;
+    schema:familyname "Davis";
+    schema:name "Miles" .
+
+
+<Q15981151>
+    a schema:Occupation;
+    schema:name "Jazz Musician" .
+
+<Q30>
+    a schema:Country;
+    schema:name "United States of America".

@@ -1,0 +1,291 @@
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix j.0: <http://www.ontologydesignpatterns.org/ont/vn/abox/role/> .
+@prefix j.1: <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix j.3: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix j.4: <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix j.5: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix j.6: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix j.8: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+j.4:denotes a owl:ObjectProperty .
+
+j.4:hasInterpretant a owl:ObjectProperty .
+
+j.1:begins a owl:ObjectProperty .
+
+j.1:ends a owl:ObjectProperty .
+
+j.1:hasContent a owl:ObjectProperty .
+
+j.1:refersTo a owl:ObjectProperty .
+
+j.6:possibleType a owl:ObjectProperty .
+
+dul:associatedWith a owl:ObjectProperty .
+
+dul:hasDataValue a owl:DataTypeProperty .
+
+dul:hasRole a owl:ObjectProperty .
+
+j.3:futureOf a owl:ObjectProperty .
+
+j.3:greaterThan a owl:ObjectProperty .
+
+j.3:locatedIn a owl:ObjectProperty .
+
+j.3:offset_0_9_President a j.1:PointerRange ;
+    rdfs:label "President"^^xsd:string ;
+    j.4:denotes <http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President> ;
+    j.1:begins "0"^^xsd:nonNegativeInteger ;
+    j.1:ends "9"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NNP .
+
+j.3:offset_100_106_future a j.1:PointerRange ;
+    rdfs:label "future"^^xsd:string ;
+    j.4:denotes j.3:future_1 ;
+    j.4:hasInterpretant j.3:Future ;
+    j.1:begins "100"^^xsd:nonNegativeInteger ;
+    j.1:ends "106"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NN .
+
+j.3:offset_107_109_of a j.1:PointerRange ;
+    rdfs:label "of"^^xsd:string ;
+    j.4:hasInterpretant j.3:Of ;
+    j.1:begins "107"^^xsd:nonNegativeInteger ;
+    j.1:ends "109"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:IN .
+
+j.3:offset_10_22_Barack_Obama a j.1:PointerRange ;
+    rdfs:label "Barack_Obama"^^xsd:string ;
+    j.4:denotes j.3:Barack_obama ;
+    j.1:begins "10"^^xsd:nonNegativeInteger ;
+    j.1:ends "22"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NNP .
+
+j.3:offset_114_118_euro a j.1:PointerRange ;
+    rdfs:label "euro"^^xsd:string ;
+    j.4:denotes j.3:euro_1 ;
+    j.4:hasInterpretant j.3:Euro ;
+    j.1:begins "114"^^xsd:nonNegativeInteger ;
+    j.1:ends "118"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NN .
+
+j.3:offset_126_132_closed a j.1:PointerRange ;
+    rdfs:label "closed"^^xsd:string ;
+    j.4:denotes j.3:close_1 ;
+    j.4:hasInterpretant j.3:Close ;
+    j.1:begins "126"^^xsd:nonNegativeInteger ;
+    j.1:ends "132"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:VBD .
+
+j.3:offset_133_140_greater a j.1:PointerRange ;
+    rdfs:label "greater"^^xsd:string ;
+    j.4:hasInterpretant j.3:Greater ;
+    j.1:begins "133"^^xsd:nonNegativeInteger ;
+    j.1:ends "140"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:JJR .
+
+j.3:offset_141_145_than a j.1:PointerRange ;
+    rdfs:label "than"^^xsd:string ;
+    j.4:hasInterpretant j.3:Than ;
+    j.1:begins "141"^^xsd:nonNegativeInteger ;
+    j.1:ends "145"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:IN .
+
+j.3:offset_150_157_dollars a j.1:PointerRange ;
+    rdfs:label "dollars"^^xsd:string ;
+    j.4:denotes j.3:dollar_1 ;
+    j.4:hasInterpretant j.3:Dollar ;
+    j.1:begins "150"^^xsd:nonNegativeInteger ;
+    j.1:ends "157"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NNS .
+
+j.3:offset_27_41_European_Union a j.1:PointerRange ;
+    rdfs:label "European_Union"^^xsd:string ;
+    j.4:denotes j.3:European_union ;
+    j.1:begins "27"^^xsd:nonNegativeInteger ;
+    j.1:ends "41"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NNP .
+
+j.3:offset_42_49_leaders a j.1:PointerRange ;
+    rdfs:label "leaders"^^xsd:string ;
+    j.4:denotes j.3:leader_1 ;
+    j.4:hasInterpretant j.3:Leader ;
+    j.1:begins "42"^^xsd:nonNegativeInteger ;
+    j.1:ends "49"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NNS .
+
+j.3:offset_50_57_huddled a j.1:PointerRange ;
+    rdfs:label "huddled"^^xsd:string ;
+    j.4:denotes j.3:huddle_1 ;
+    j.4:hasInterpretant j.3:Huddle ;
+    j.1:begins "50"^^xsd:nonNegativeInteger ;
+    j.1:ends "57"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:VBD .
+
+j.3:offset_58_60_in a j.1:PointerRange ;
+    rdfs:label "in"^^xsd:string ;
+    j.4:hasInterpretant j.3:In ;
+    j.1:begins "58"^^xsd:nonNegativeInteger ;
+    j.1:ends "60"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:IN .
+
+j.3:offset_61_71_Washington a j.1:PointerRange ;
+    rdfs:label "Washington"^^xsd:string ;
+    j.4:denotes j.3:Washington ;
+    j.1:begins "61"^^xsd:nonNegativeInteger ;
+    j.1:ends "71"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NNP .
+
+j.3:offset_72_76_amid a j.1:PointerRange ;
+    rdfs:label "amid"^^xsd:string ;
+    j.4:hasInterpretant j.0:Location ;
+    j.1:begins "72"^^xsd:nonNegativeInteger ;
+    j.1:ends "76"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:IN .
+
+j.3:offset_77_84_growing a j.1:PointerRange ;
+    rdfs:label "growing"^^xsd:string ;
+    j.4:denotes j.3:grow_1 ;
+    j.4:hasInterpretant j.3:Grow ;
+    j.1:begins "77"^^xsd:nonNegativeInteger ;
+    j.1:ends "84"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:VBG .
+
+j.3:offset_85_90_fears a j.1:PointerRange ;
+    rdfs:label "fears"^^xsd:string ;
+    j.4:denotes j.3:fear_1 ;
+    j.4:hasInterpretant j.3:Fear ;
+    j.1:begins "85"^^xsd:nonNegativeInteger ;
+    j.1:ends "90"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:NNS .
+
+j.3:offset_91_95_over a j.1:PointerRange ;
+    rdfs:label "over"^^xsd:string ;
+    j.4:hasInterpretant j.3:Over ;
+    j.1:begins "91"^^xsd:nonNegativeInteger ;
+    j.1:ends "95"^^xsd:nonNegativeInteger ;
+    j.1:refersTo j.3:docuverse ;
+    j.5:pennpos j.5:IN .
+
+j.3:over a owl:ObjectProperty .
+
+j.5:boxerpos a owl:ObjectProperty .
+
+j.5:pennpos a owl:ObjectProperty .
+
+j.8:hasDeterminer a owl:ObjectProperty .
+
+j.8:hasQuantifier a owl:ObjectProperty .
+
+j.0:Agent a owl:ObjectProperty .
+
+j.0:Patient a owl:ObjectProperty .
+
+j.0:Theme a owl:ObjectProperty .
+
+rdfs:subClassOf a owl:ObjectProperty .
+
+owl:equivalentClass a owl:ObjectProperty .
+
+<http://dbpedia.org/resource/Barack_Obama> a schema:Person .
+
+<http://dbpedia.org/resource/Washington,_D.C.> a schema:Place .
+
+j.3:Greater j.5:boxerpos j.5:a .
+
+j.3:close_1 a j.3:Close ;
+    j.0:Patient j.3:euro_1 .
+
+j.3:grow_1 a j.3:Grow ;
+    j.0:Agent j.3:fear_1 .
+
+j.3:huddle_1 a j.3:Huddle ;
+    j.3:locatedIn j.3:Washington ;
+    j.0:Location j.3:fear_1 ;
+    j.0:Theme j.3:Barack_obama,
+        j.3:leader_1 .
+
+j.0:Location a owl:ObjectProperty .
+
+j.3:Barack_obama j.6:possibleType <http://dbpedia.org/ontology/Place> ;
+    dul:associatedWith <http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President> ;
+    dul:hasRole <http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President> ;
+    = <http://dbpedia.org/resource/Barack_Obama> .
+
+j.3:Close j.5:boxerpos j.5:v ;
+    rdfs:subClassOf dul:Event ;
+    owl:equivalentClass <http://www.ontologydesignpatterns.org/ont/vn/data/Close_45040000> .
+
+j.3:Dollar j.5:boxerpos j.5:n .
+
+j.3:Euro j.5:boxerpos j.5:n .
+
+j.3:European_union j.6:possibleType <http://xmlns.com/foaf/0.1/Organization> ;
+    = <http://dbpedia.org/resource/European_Union> .
+
+j.3:Fear j.5:boxerpos j.5:n .
+
+j.3:Future j.5:boxerpos j.5:n .
+
+j.3:Grow j.5:boxerpos j.5:v ;
+    rdfs:subClassOf dul:Event ;
+    owl:equivalentClass <http://www.ontologydesignpatterns.org/ont/vn/data/Grow_26010000> .
+
+j.3:Huddle j.5:boxerpos j.5:v ;
+    rdfs:subClassOf dul:Event ;
+    owl:equivalentClass <http://www.ontologydesignpatterns.org/ont/vn/data/Huddle_47060000> .
+
+j.3:Leader j.5:boxerpos j.5:n .
+
+j.3:Washington j.6:possibleType <http://dbpedia.org/ontology/Place> ;
+    = <http://dbpedia.org/resource/Washington,_D.C.> .
+
+j.3:dollar_1 a j.3:Dollar ;
+    dul:hasDataValue "1.3"^^xsd:nonNegativeInteger ;
+    j.8:hasQuantifier j.8:multiple .
+
+j.3:future_1 a j.3:Future ;
+    j.3:futureOf j.3:euro_1 ;
+    j.8:hasDeterminer j.8:the .
+
+j.3:leader_1 a j.3:Leader ;
+    dul:associatedWith j.3:European_union ;
+    j.8:hasQuantifier j.8:multiple .
+
+<http://www.ontologydesignpatterns.org/ont/boxer/title.owl#President> j.6:possibleType dul:Role ;
+    = <http://dbpedia.org/resource/President_of_the_United_States> .
+
+j.3:euro_1 a j.3:Euro ;
+    j.3:greaterThan j.3:dollar_1 ;
+    j.8:hasDeterminer j.8:the .
+
+j.3:fear_1 a j.3:Fear ;
+    j.3:over j.3:future_1 ;
+    j.8:hasQuantifier j.8:multiple .
+
+j.3:docuverse a j.1:StringDocuverse ;
+    j.1:hasContent "President Barack_Obama and European_Union leaders huddled in Washington amid growing fears over the future of the euro, which closed greater than 1.3 dollars." .

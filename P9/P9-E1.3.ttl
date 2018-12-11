@@ -1,0 +1,19 @@
+@base <http://www.wikidata.org/wiki/> .
+@prefix schema: <http://schema.org/> .
+
+<Q9684>
+    a schema:Periodical ;
+    schema:name "The New York Times" .
+
+<Q92739>
+    a schema:Person ;
+    schema:publishingPrinciples <Q132874> ;
+    schema:familyname "McCarthy";
+    schema:name "John" .
+
+<Q132874>
+    a schema:CreativeWork;
+    schema:name "LISP";
+    schema:about "programming language LISP".
+
+

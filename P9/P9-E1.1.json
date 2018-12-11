@@ -1,0 +1,31 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [{
+            "@id": "http://www.wikidata.org/wiki/Q15981151",
+            "@type": "schema:Occupation",
+            "schema:name": "Jazz Musician"
+        },
+        {
+            "@id": "http://www.wikidata.org/wiki/Q93341",
+            "@type": "schema:Person",
+            "schema:familyname": "Davis",
+            "schema:hasOccupation": {
+                "@id": "http://www.wikidata.org/wiki/Q15981151"
+            },
+            "schema:name": "Miles",
+            "schema:nationality": {
+                "@id": "http://www.wikidata.org/wiki/Q30"
+            }
+        },
+        {
+            "@id": "http://www.wikidata.org/wiki/Q30",
+            "@type": "schema:Country",
+            "schema:name": "United States of America"
+        }
+    ]
+}

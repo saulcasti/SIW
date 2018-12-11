@@ -1,0 +1,311 @@
+{
+    "@context": {
+        "dbpedia": "http://dbpedia.org/resource/",
+        "dul": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+        "j.0": "http://www.essepuntato.it/2008/12/earmark#",
+        "j.2": "http://ontologydesignpatterns.org/cp/owl/semiotics.owl#",
+        "j.3": "http://www.ontologydesignpatterns.org/ont/fred/domain.owl#",
+        "j.4": "http://www.ontologydesignpatterns.org/ont/fred/pos.owl#",
+        "j.5": "http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#",
+        "j.7": "http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [{
+            "@id": "j.0:refersTo",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:American",
+            "@type": "owl:Class",
+            "j.4:boxerpos": {
+                "@id": "j.4:a"
+            },
+            "rdfs:subClassOf": {
+                "@id": "dul:Quality"
+            }
+        },
+        {
+            "@id": "j.4:pennpos",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_28_32_jazz",
+            "@type": "j.0:PointerRange",
+            "j.0:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "28"
+            },
+            "j.0:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "32"
+            },
+            "j.0:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.2:denotes": [{
+                    "@id": "j.3:jazz_1"
+                },
+                {
+                    "@id": "j.3:Miles_davis"
+                }
+            ],
+            "j.2:hasInterpretant": {
+                "@id": "j.3:Jazz"
+            },
+            "j.4:pennpos": {
+                "@id": "j.4:NN"
+            },
+            "rdfs:label": "jazz"
+        },
+        {
+            "@id": "j.3:offset_19_41_american+jazz+musician",
+            "@type": "j.0:PointerRange",
+            "j.0:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "19"
+            },
+            "j.0:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "41"
+            },
+            "j.0:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.2:denotes": {
+                "@id": "j.3:AmericanJazzMusician"
+            },
+            "rdfs:label": [
+                "American Jazz Musician",
+                "american jazz musician"
+            ]
+        },
+        {
+            "@id": "j.5:possibleType",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:Musician",
+            "@type": "owl:Class",
+            "j.4:boxerpos": {
+                "@id": "j.4:n"
+            },
+            "owl:equivalentClass": {
+                "@id": "dbpedia:Musician"
+            }
+        },
+        {
+            "@id": "rdfs:subClassOf",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.7:hasDeterminer",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:Jazz",
+            "@type": "owl:Class",
+            "j.4:boxerpos": {
+                "@id": "j.4:n"
+            },
+            "owl:equivalentClass": {
+                "@id": "dbpedia:Jazz"
+            }
+        },
+        {
+            "@id": "j.3:docuverse",
+            "@type": "j.0:StringDocuverse",
+            "j.0:hasContent": "Miles_Davis was an american jazz musician."
+        },
+        {
+            "@id": "j.3:offset_28_41_jazz+musician",
+            "@type": "j.0:PointerRange",
+            "j.0:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "28"
+            },
+            "j.0:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "41"
+            },
+            "j.0:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.2:denotes": {
+                "@id": "j.3:JazzMusician"
+            },
+            "rdfs:label": [
+                "Jazz Musician",
+                "jazz musician"
+            ]
+        },
+        {
+            "@id": "j.3:offset_0_11_Miles_Davis",
+            "@type": "j.0:PointerRange",
+            "j.0:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "0"
+            },
+            "j.0:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "11"
+            },
+            "j.0:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.2:denotes": {
+                "@id": "j.3:Miles_davis"
+            },
+            "j.2:hasInterpretant": [{
+                    "@id": "j.3:Jazz"
+                },
+                {
+                    "@id": "j.3:Musician"
+                }
+            ],
+            "j.4:pennpos": {
+                "@id": "j.4:NNP"
+            },
+            "rdfs:label": "Miles_Davis"
+        },
+        {
+            "@id": "j.2:denotes",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:offset_33_41_musician",
+            "@type": "j.0:PointerRange",
+            "j.0:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "33"
+            },
+            "j.0:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "41"
+            },
+            "j.0:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.2:denotes": [{
+                    "@id": "j.3:Miles_davis"
+                },
+                {
+                    "@id": "j.3:musician_1"
+                }
+            ],
+            "j.2:hasInterpretant": {
+                "@id": "j.3:Musician"
+            },
+            "j.4:pennpos": {
+                "@id": "j.4:NN"
+            },
+            "rdfs:label": "musician"
+        },
+        {
+            "@id": "j.3:jazz_1",
+            "@type": "j.3:Jazz",
+            "dul:associatedWith": {
+                "@id": "j.3:Miles_davis"
+            },
+            "j.7:hasDeterminer": {
+                "@id": "j.7:an"
+            }
+        },
+        {
+            "@id": "j.3:AmericanJazz",
+            "@type": "owl:Class",
+            "dul:hasQuality": {
+                "@id": "j.3:American"
+            },
+            "rdfs:subClassOf": {
+                "@id": "j.3:Jazz"
+            }
+        },
+        {
+            "@id": "j.0:begins",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.0:hasContent",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.0:ends",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:JazzMusician",
+            "@type": "owl:Class",
+            "dul:associatedWith": {
+                "@id": "j.3:Jazz"
+            },
+            "rdfs:subClassOf": {
+                "@id": "j.3:Musician"
+            }
+        },
+        {
+            "@id": "j.3:AmericanJazzMusician",
+            "@type": "owl:Class",
+            "dul:associatedWith": {
+                "@id": "j.3:AmericanJazz"
+            },
+            "rdfs:subClassOf": {
+                "@id": "j.3:JazzMusician"
+            }
+        },
+        {
+            "@id": "dul:associatedWith",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "j.3:Miles_davis",
+            "@type": "j.3:AmericanJazzMusician",
+            "j.5:possibleType": {
+                "@id": "http://dbpedia.org/ontology/Place"
+            },
+            "owl:sameAs": {
+                "@id": "dbpedia:Miles_Davis"
+            }
+        },
+        {
+            "@id": "j.4:boxerpos",
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "dbpedia:Miles_Davis",
+            "@type": [
+                "schema:Person",
+                "schema:MusicGroup"
+            ]
+        },
+        {
+            "@id": "j.3:offset_19_27_american",
+            "@type": "j.0:PointerRange",
+            "j.0:begins": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "19"
+            },
+            "j.0:ends": {
+                "@type": "xsd:nonNegativeInteger",
+                "@value": "27"
+            },
+            "j.0:refersTo": {
+                "@id": "j.3:docuverse"
+            },
+            "j.2:hasInterpretant": {
+                "@id": "j.3:American"
+            },
+            "j.4:pennpos": {
+                "@id": "j.4:JJ"
+            },
+            "rdfs:label": "american"
+        },
+        {
+            "@id": "j.2:hasInterpretant",
+            "@type": "owl:ObjectProperty"
+        }
+    ]
+}

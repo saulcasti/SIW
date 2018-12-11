@@ -1,0 +1,29 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [{
+            "@id": "http://www.wikidata.org/wiki/Q92739",
+            "@type": "schema:Person",
+            "schema:familyname": "McCarthy",
+            "schema:name": "John",
+            "schema:publishingPrinciples": {
+                "@id": "http://www.wikidata.org/wiki/Q132874"
+            }
+        },
+        {
+            "@id": "http://www.wikidata.org/wiki/Q9684",
+            "@type": "schema:Periodical",
+            "schema:name": "The New York Times"
+        },
+        {
+            "@id": "http://www.wikidata.org/wiki/Q132874",
+            "@type": "schema:CreativeWork",
+            "schema:about": "programming language LISP",
+            "schema:name": "LISP"
+        }
+    ]
+}

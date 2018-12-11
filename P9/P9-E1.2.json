@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://www.wikidata.org/wiki/Q30461",
+      "@type": "schema:Occupation",
+      "schema:name": "President"
+    },
+    {
+      "@id": "http://www.wikidata.org/wiki/Q61",
+      "@type": "schema:City",
+      "schema:name": "Washington"
+    },
+    {
+      "@id": "http://www.wikidata.org/wiki/Q458",
+      "@type": "schema:Organization",
+      "schema:name": "European Union"
+    },
+    {
+      "@id": "http://www.wikidata.org/wiki/Q4916",
+      "@type": "schema:Thing",
+      "schema:name": "euro"
+    },
+    {
+      "@id": "http://www.wikidata.org/wiki/Q4917",
+      "@type": "schema:Thing",
+      "schema:name": "dollar"
+    },
+    {
+      "@id": "http://www.wikidata.org/wiki/Q76",
+      "@type": "schema:Person",
+      "schema:familyname": "Obama",
+      "schema:hasOccupation": {
+        "@id": "http://www.wikidata.org/wiki/Q30461"
+      },
+      "schema:name": "Barack"
+    }
+  ]
+}
